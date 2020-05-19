@@ -1,0 +1,55 @@
+.container {
+    width             : 100%;
+    height            : 500px;
+    background-color  : white;
+    border            : 1px solid white;
+    border-radius     : 16px;
+    box-shadow        : 5px 5px 10px #e1e1e3, -5px -5px 10px #ffffff;
+}
+
+.container2 {
+    width             : 75%;
+    height            : 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slick-slide {
+    height    : 320px;
+    box-sizing: border-box;
+}
+
+.slick-slide img {
+    height    : 50%;
+    width     : 75%;
+    border    : 2.5px solid white;
+    box-sizing: border-box;
+}
+
+.slick-slide text {
+    font-size : 30pt;
+    height    : 50%;
+    width     : 75%;
+    border    : 2.5px solid white;
+    box-sizing: border-box;
+}
+
+/* .center
+{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.property-card {
+    height            : 75px;
+    width             : 75px;
+    display           : flex;
+    position          : relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition     : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition        : all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius     : 16px;
+}
