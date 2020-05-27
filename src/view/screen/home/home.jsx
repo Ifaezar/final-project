@@ -2,10 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import "./home.css"
 import "slick-carousel/slick/slick.css"
+import Logo from "../../../assets/images/logo.png"
 import "slick-carousel/slick/slick-theme.css"
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBus, faTrain, faPlane } from "@fortawesome/free-solid-svg-icons";
+import { faBus, faTrain, faPlane, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 class HomeScreen extends React.Component {
     render() {
@@ -89,10 +91,10 @@ class HomeScreen extends React.Component {
                 <div className="container2 row mt-5">
                     <div className="col-2">
                         <Link to="#">
-                            <div className="property-card">
-                                <FontAwesomeIcon icon={faTrain} style={{ height: "60px", width: "100px" }}>
-                                </FontAwesomeIcon>
-                            </div>
+                            <img src="https://s3.amazonaws.com/ionic-marketplace/login-register-profile-firebase/icon.png"
+                                alt=""
+                                style={{ width: "100%", height: "200px" }}
+                            />
                         </Link>
                     </div>
                     <div className="col-4">
@@ -102,16 +104,78 @@ class HomeScreen extends React.Component {
                     </div>
                     <div className="col-2">
                         <Link to="#">
-                            <div className="property-card">
-                                <FontAwesomeIcon icon={faTrain} style={{ height: "60px", width: "100px" }}>
-                                </FontAwesomeIcon>
-                            </div>
+                            <img src="https://media.istockphoto.com/vectors/flight-tickets-online-booking-icon-vector-id1058121922"
+                                alt=""
+                                style={{ width: "100%", height: "200px" }} />
                         </Link>
                     </div>
                     <div className="col-4">
                         <h1><strong>Simple Booking Process</strong></h1>
                         <br />
                         <h2>Pemesanan tanpa ribet di mana pun dan kapan pun</h2>
+                    </div>
+                </div>
+                <div className="container3 mt-5">
+                    <div className="row">
+                        <div className="col-6 text-center mt-5">
+                            <p>
+                                <img src={Logo} alt="" />
+                            </p>
+                            <p>
+                                <FontAwesomeIcon
+                                    icon={faEnvelope}
+                                    style={{ height: "60px", width: "100px", color: "white" }}
+                                    className="mt-5">
+                                </FontAwesomeIcon>
+                            </p>
+                            <p
+                                style={{ color: "white" }}>
+                                faezarilham@gmail.com
+                            </p>
+                            <p>
+                                <FontAwesomeIcon
+                                    icon={faGithub}
+                                    style={{ height: "60px", width: "100px", color: "white" }}
+                                    className="mt-5">
+                                </FontAwesomeIcon>
+                            </p>
+                            <p>
+                                <Link to="https://github.com/Ifaezar"
+                                    style={{ color: "white" }}>
+                                    https://github.com/Ifaezar
+                                    </Link>
+                            </p>
+                        </div>
+
+                        <div className="col-6 text-center mt-5">
+                            <h1 style={{ color: "white" }}>Produk</h1>
+                            <p className="mt-5">
+                                <Link
+                                    
+                                    style={{ color: "white", textDecoration: "none", fontSize: "16pt" }}
+                                    to="#"
+                                >
+                                    Pesawat
+                            </Link>
+                            </p>
+                            <p className="mt-5">
+                                <Link
+                                    style={{ color: "white", textDecoration: "none", fontSize: "16pt" }}
+                                    to="#"
+                                >
+                                    Kereta Api
+                            </Link>
+                            </p>
+                            <p className="mt-5">
+                                <Link
+                                    style={{ color: "white", textDecoration: "none", fontSize: "16pt" }}
+                                    to="#"
+                                >
+                                    Bus
+                            </Link>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
